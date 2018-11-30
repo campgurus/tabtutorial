@@ -9,5 +9,8 @@ module.exports = {
       host: process.env.HOST || 'localhost'
       // storage: './tabtutorial.postgres'
     }
+  },
+  authentication: {
+    jwtSecret: process.env. JWT_SECRET || 'secret'
   }
 }
