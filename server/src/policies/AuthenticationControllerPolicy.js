@@ -1,4 +1,4 @@
- const Joi = require('joi')
+const Joi = require('joi')
 
 module.exports = {
   register (req, res, next) {
@@ -24,7 +24,7 @@ module.exports = {
             <br>
             1. It must contain ONLY the following characters: lower case, upper case, numerics
             <br>
-            2. It must be at least 8 characters in length and not greater than 32 characters`
+            2. It must be at least 8 characters and not greater than 32 characters in length`
           })
           break
         default:
