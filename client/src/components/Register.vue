@@ -1,5 +1,5 @@
 <template>
-  <v-layout row>
+  <v-layout>
     <v-flex xs6 offset-xs3>
       <panel title='Register'>
           <v-text-field
