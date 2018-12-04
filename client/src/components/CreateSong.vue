@@ -40,7 +40,7 @@
         <v-text-field
           label="YouTube Id"
           required
-            :rules="[required]"
+          :rules="[required]"
           v-model="song.youtubeId"
         ></v-text-field>
       </panel>
@@ -49,11 +49,15 @@
       <panel title="Song Structure" class="ml-2">
         <v-textarea
           label="Tab"
+          required
+          :rules="[required]"
           v-model="song.tab"
         ></v-textarea>
 
         <v-textarea
           label="Lyrics"
+          required
+          :rules="[required]"
           v-model="song.lyrics"
         ></v-textarea>
       </panel>
