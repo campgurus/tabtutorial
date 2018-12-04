@@ -24,12 +24,10 @@
 import Tab from './Tab'
 import Lyrics from './Lyrics'
 import SongsService from '@/services/SongsService'
-import Panel from '@/components/Panel'
 import SongMetadata from './SongMetadata'
 import YouTube from '@/components/ViewSong/YouTube'
 export default {
   components: {
-    Panel,
     SongMetadata,
     YouTube,
     Lyrics,

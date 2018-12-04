@@ -1,15 +1,10 @@
 <template>
-  <v-layout>
-
-  </v-layout>
+  <panel title="search" />
 </template>
 
 <script>
 export default {
-  data () {
-    return {
-    }
-  }
+
 }
 </script>
 
