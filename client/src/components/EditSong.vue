@@ -69,7 +69,7 @@
         dark
         class="cyan"
         @click="save">
-        Edit Song
+        Update Song
       </v-btn>
     </v-flex>
   </v-layout>

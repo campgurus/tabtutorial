@@ -15,7 +15,7 @@
           ></v-text-field>
         </form>
       <br>
-      <div class="error" v-html="error" />
+      <div class="danger-alert" v-html="error" />
       <v-btn dark class='cyan'
         @click="login">
         Log in
@@ -44,6 +44,9 @@ export default {
         })
         this.$store.dispatch('setToken', response.data.token)
         this.$store.dispatch('setUser', response.data.token)
+        this.$router.push({
+          name: 'songs'
+        })
       } catch (error) {
         this.error = error.response.data.error
       }

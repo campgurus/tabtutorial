@@ -13,7 +13,7 @@
               v-model='password'
             ></v-text-field>
           <br>
-          <div class="error" v-html="error" />
+          <div class="danger-alert" v-html="error" />
           <v-btn dark class='cyan'
             @click="register">
             Register
@@ -42,6 +42,9 @@ export default {
         })
         this.$store.dispatch('setToken', response.data.token)
         this.$store.dispatch('setUser', response.data.token)
+        this.$router.push({
+          name: 'songs'
+        })
       } catch (error) {
         this.error = error.response.data.error
       }
