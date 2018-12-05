@@ -24,6 +24,20 @@
           }">
           Edit
         </v-btn>
+        <v-btn
+          v-if="isUserLoggedIn"
+          dark
+          class="cyan"
+          @click="bookmark">
+          Bookmark
+        </v-btn>
+        <v-btn
+          v-if="isUserLoggedIn"
+          dark
+          class="cyan"
+          @click="unbookmark">
+          UnBookmark
+        </v-btn>
       </v-flex>
       <v-flex xs6>
         <img class="album-image" :src="song.albumImageUrl" />
@@ -37,10 +51,24 @@
 </template>
 
 <script>
+import {mapState} from 'vuex'
 export default {
   props: [
     'song'
-  ]
+  ],
+  computed: {
+    ...mapState([
+      'isUserLoggedIn'
+    ])
+  },
+  methods: {
+    bookmark () {
+      console.log('bookmark clicked')
+    },
+    unbookmark () {
+      console.log('bookmark clicked')
+    }
+  }
 }
 </script>
 
